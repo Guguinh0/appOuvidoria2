@@ -97,7 +97,7 @@ def excluirReclamacoes(conexao,codigo):
     return excluindoReclamacao
 
 def excluirSugestoes(conexao,codigo):
-    excluirSugestaoSQL = "DELETE FROM reclamacoes WHERE codigo = %s"
+    excluirSugestaoSQL = "DELETE FROM sugestoes WHERE codigo = %s"
 
     dados = (codigo,)
 
