@@ -1,7 +1,7 @@
 from operacoesbd import *
 from biblioouvidoria import *
 
-conn = criarConexao("localhost","root","12345","universisdade_xyz")
+conn = criarConexao("localhost","root","12345","universidade_xyz")
 
 opcao = 0
 
