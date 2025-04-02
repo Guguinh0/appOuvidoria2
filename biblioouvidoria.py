@@ -62,16 +62,16 @@ def listarCodigoReclamacoes(conexao,codigo):
 
     listarCodigoRecSQL = "SELECT * FROM reclamacoes WHERE codigo = %s"
 
-    dados = [codigo]
+    dados = (codigo,)
 
     listandoCodigoReclamacoes = listarBancoDados(conexao,listarCodigoRecSQL,dados)
     
     return listandoCodigoReclamacoes
 
-def listarCodigoSugestoes(conexao,id):
+def listarCodigoSugestoes(conexao,codigo):
     listarCodigoSugSQL = "SELECT * FROM sugestoes WHERE codigo = %s"
 
-    dados = (id,)
+    dados = (codigo,)
 
     listandoCodigoSugestoes = listarBancoDados(conexao, listarCodigoSugSQL, dados)
     
